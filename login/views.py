@@ -4,12 +4,23 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 
 def login_create(request):
+    '''
+    renders login_or_create.html
+    '''
     return render(request, ('login/login_or_create.html'))
 
 def login(request):
+    '''
+    renders login.html
+    '''
     return render(request, ('login/login.html'))
 
 def create_user(request):
+    '''
+    creates new user object
+    uses user input
+    does not allow duplicate entrrys
+    '''
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
