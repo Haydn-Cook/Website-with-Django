@@ -4,10 +4,18 @@ from .models import Blog_Post
 from django.contrib.auth.models import User
 
 def blog(request):
+    '''
+    displays all blogs
+    '''
     blog_posts = Blog_Post.objects.all()
     return render(request, 'blog/blog.html', {'blog_posts': blog_posts})
 
 def add_blog(request):
+    '''
+    Adds new blog objects
+    used user input
+    redirects to main blog page
+    '''
     if request.method == 'POST':
         user_id = request.POST.get('user')
         title =  request.POST.get('blog_title')
