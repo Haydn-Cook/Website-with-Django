@@ -21,13 +21,18 @@ and django should run perfectly
 
 List the prerequisites that the user needs to have installed before they can use your project. For example:
 
-- Python 3.7
+- Python 3.11.4
 - Django
+- (requiements.txt)
 
 ### Installation
 
-Step-by-step instructions on how to install and set up your Django project. Include any specific commands that need to be run. For example:
-1.Clone this repository
-2. In cmd or ide go to the root of the files
-3. run command django manage.py run server
-4. everything should work
+1. Clone this repository
+2. If not already install python on your device
+3. Install pip on your device if not already installed
+4. Set up a venv (it is recomended to run in a venv so that only the requirments for the project is present) 
+5. Install the requriments for the programe(requirements.txt)
+6. Once all the above is done naviagte to the root of the programe
+7. In the console run the following command (python manage.py runsever)
+8. In your browser navigate to https//:127.0.0.1:8000/
+9. Everything should run smoothly
