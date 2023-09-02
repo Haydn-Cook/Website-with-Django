@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.8
+FROM python:3.11.2
 
 # Set environment variables for Django
 ENV DJANGO_SETTINGS_MODULE=Capstone2.settings
@@ -12,7 +12,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install -r requirements.txt || cat /app/requirements.txt
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
