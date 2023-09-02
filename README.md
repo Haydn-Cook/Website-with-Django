@@ -7,6 +7,7 @@ Short description or introduction to your Django project.
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Docker](#docker)
 
 ## Getting Started
 
@@ -34,3 +35,9 @@ List the prerequisites that the user needs to have installed before they can use
 7. In the console run the following command (python manage.py runsever)
 8. In your browser navigate to https//:127.0.0.1:8000/
 9. Everything should run smoothly
+
+### Docker
+1. Install docker or use docker playground
+2. navigate to the root of the programe in docker
+3. build the image (docker build -t [name of image] ./)
+4. run image (docker run -p 8000:8000 [name of image])
