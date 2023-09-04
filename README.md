@@ -26,11 +26,11 @@ List the prerequisites that the user needs to have installed before they can use
 
 ### Installation
 
-1. Clone this repository
+1. Clone this repository (git clone https://github.com/Haydn-Cook/level3-capstone)
 2. If not already install Python on your device
 3. Install pip on your device if not already installed
-4. Set up a venv (it is recommended to run in a venv so that only the requirements for the project are present) 
-5. Install the requirements for the program (requirements.txt)
+4. Set up a venv (it is recommended to run in a venv so that only the requirements for the project are present)(to make a venv type  python -m venv venv_name)
+5. Install the requirements for the program (requirements.txt)(pip install -r requirements.txt)
 6. Once all the above is done navigate to the root of the program
 7. In the console run the following command (python manage.py runsever)
 8. In your browser navigate to https//:127.0.0.1:8000/
