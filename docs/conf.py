@@ -1,8 +1,9 @@
 import os
 import sys
 import django
+
 sys.path.insert(0, os.path.abspath('..'))
-os.environ['DJANGO_SETTINGS_MODULE'] = 'Capstone2'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'Capstone2.settings'
 django.setup()
 # Configuration file for the Sphinx documentation builder.
 #
@@ -12,15 +13,18 @@ django.setup()
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'capstone'
+project = 'Capstone2'
 copyright = '2023, Haydn'
 author = 'Haydn'
-release = '00:00:01'
+release = '0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['sphinx.ext.autodoc',
+'sphinx.ext.viewcode',
+'sphinx.ext.napoleon'              
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
